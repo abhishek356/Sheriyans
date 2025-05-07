@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import styles from './homePage.module.css'
+import SignIn from "@repo/ui/SignIn";
+import Signup from "@repo/ui/SignUp";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,7 +26,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link href ="https://fonts.cdnfonts.com/css/gilroy" rel="stylesheet"></link>
+
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        
+      <nav className = {styles.nav}>
+            <a className = {styles.elem} href='/'>Home</a>
+            <a className = {styles.elem} href='#'>About</a>
+            <a className = {styles.elem} href='#'>Cart</a>
+            
+                <Signup/>
+                <SignIn/>
+           
+            <a className = {styles.elem}><i className="ri-shopping-bag-4-fill"></i></a>
+            </nav>
         {children}
       </body>
     </html>

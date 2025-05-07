@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
+    "./admin": "./src/admin-tsx.tsx",
+    "./SignUp": "./src/SignUp.tsx",
+    "./SignIn": "./src/SignIn.tsx",
     "./*": "./src/*.tsx"
   },
   "scripts": {
@@ -21,6 +24,9 @@
     "typescript": "5.8.2"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.0.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   }
