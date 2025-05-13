@@ -1,3 +1,4 @@
+
 export { prisma } from './client.js'
 //
 // const { prisma } = require('./client.ts')

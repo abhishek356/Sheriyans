@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE "User" ADD COLUMN     "avatar" TEXT NOT NULL DEFAULT '',
+ADD COLUMN     "user" TEXT NOT NULL DEFAULT '',
+ALTER COLUMN "role" SET DEFAULT '';

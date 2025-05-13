@@ -15,16 +15,19 @@
     "@prisma/client": "^6.7.0",
     "@repo/db": "*",
     "@types/axios": "^0.9.36",
+    "@types/dotenv": "^6.1.1",
     "axios": "^1.8.4",
     "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
     "esbuild": "^0.25.2",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
+    "@types/jsonwebtoken": "^9.0.9",
     "@types/node": "^22.15.14",
-    "prisma": "^6.7.0",
     "ts-node": "^10.9.2",
     "tsx": "^4.19.4",
     "typescript": "^5.8.3"

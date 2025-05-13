@@ -1,5 +1,7 @@
 // import { PrismaClient } from "@prisma/client/extension";
-import { PrismaClient } from '@repo/db'
+// import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "@prisma/client";
+
 const prisma = new PrismaClient();
 export async function mainCreateUser(username: string, password: string) {
   console.log('mainCreateUser triggered in create-user.ts')
@@ -7,7 +9,9 @@ export async function mainCreateUser(username: string, password: string) {
     data: {
       email: username,
       password: password,
-      role: ""
+      role: "",
+      user: "",
+      avatar: ""
     }
   });
   console.log('data saved in db', user)

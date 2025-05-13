@@ -13,6 +13,7 @@
     "migrate:prod": "prisma migrate deploy"
   },
   "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.9",
     "@types/node": "^22.15.13",
     "prettier": "^3.5.3",
     "prisma": "^6.7.0",
@@ -29,6 +30,7 @@
     "packages/*"
   ],
   "dependencies": {
-    "@prisma/client": "^6.7.0"
+    "@prisma/client": "^6.7.0",
+    "jsonwebtoken": "^9.0.2"
   }
 }

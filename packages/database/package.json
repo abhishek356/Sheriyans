@@ -14,5 +14,8 @@
   },
   "exports": {
     ".": "./dist/index.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.7.0"
   }
 }
